@@ -4,6 +4,7 @@ using namespace std;
 
 int main(){
 
+        //menghitung volume dan luas permukaan balok
         float panjang;
         float lebar;
         float tinggi;

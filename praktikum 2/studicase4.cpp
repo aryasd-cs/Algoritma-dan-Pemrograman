@@ -7,14 +7,28 @@ int main(){
     //konversi mata uang rupiah ke dollar
     float rupiah;
     float dollar;
+    float kurs_konversi;
 
     cout << "Masukkan jumlah rupiah: ";
     cin >> rupiah;
+    cout << "Masukkan kurs konversi (rupiah per 1 dollar): ";
+    cin >> kurs_konversi;
 
-    dollar = rupiah / 15000; // asumsi 1 USD = 15000 IDR
+    if (kurs_konversi > 0){
 
-    cout << fixed << setprecision(2);
-    cout << "Jumlah dollar yang didapat: $" << dollar << endl;
+        dollar = rupiah / kurs_konversi;
+
+        cout << fixed << setprecision(2);
+        cout << "===============================" << endl;
+        cout << "Jumlah rupiah: Rp" << rupiah << endl;
+        cout << "Jumlah dollar: $" << dollar << endl;
+
+    } else{
+
+        cout << "===============================" << endl;
+        cout << "Kurs konversi harus lebih besar dari 0." << endl;
+
+        }
 
     return 0;
 }
