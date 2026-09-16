@@ -19,15 +19,21 @@ int main(){
         cout << "Masukkan tinggi balok: ";
         cin >> tinggi;
 
-        //RUMUS VOLUME DAN LUAS PERMUKAAN BALOK
         volume = panjang * lebar * tinggi;
         luas_permukaan = 2 * (panjang * lebar + panjang * tinggi + lebar * tinggi);
 
         cout << "============================================================" << endl;
 
-        cout << left << setw(10) << "panjang" << left << setw(10) << "lebar" << left << setw(10) << "tinggi"
-        << left << setw(15) << "volume" << left << setw(20) << "luas_permukaan" << endl;
-        cout << left << setw(10) << panjang << left << setw(10) << lebar << left << setw(10) << tinggi
-        << left << setw(15) << volume << left << setw(20) << luas_permukaan << endl;
+        cout << left << setw(10) << "panjang"
+        << left << setw(10) << "lebar"
+        << left << setw(10) << "tinggi"
+        << left << setw(15) << "volume"
+        << left << setw(20) << "luas_permukaan" << endl;
+        
+        cout << left << setw(10) << panjang
+        << left << setw(10) << lebar
+        << left << setw(10) << tinggi
+        << left << setw(15) << volume
+        << left << setw(20) << luas_permukaan << endl;
         return 0;
 }
