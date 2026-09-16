@@ -4,7 +4,6 @@ using namespace std;
 
 int main(){
 
-    //konversi mata uang rupiah ke dollar
     float rupiah;
     float dollar;
     float kurs_konversi;
